@@ -7,7 +7,7 @@ import jade.core.AID;
 import jade.core.behaviours.*;
 import jade.lang.acl.*;
 
-public class Second extends Agent {
+public class Third extends Agent {
 	
 	container env = new container();
 //	int [][] paths = env.paths;
@@ -19,7 +19,7 @@ public class Second extends Agent {
 			public void action() {
 				ACLMessage msg = receive();
 				if(msg!=null) {
-					System.out.println("Agent_2 Path:");
+					System.out.println("Agent_3 Path:");
 					System.out.println(msg.getContent());
 
 					block();

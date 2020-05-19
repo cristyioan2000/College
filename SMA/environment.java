@@ -88,7 +88,7 @@ public class environment {
 		
 
 	}
-	public int gen_env(int num_paths,int keys_doors,int path_len,boolean display) {
+	public int[][] gen_env(int num_paths,int keys_doors,int path_len,boolean display) {
 		/*
 			Generates the whole envirnoment 
 			Arguments:
@@ -102,6 +102,6 @@ public class environment {
 		int[][] paths = create_paths(num_paths,keys_doors,path_len,display);
 		
 		
-		return 0;
+		return paths;
 	}
 }
