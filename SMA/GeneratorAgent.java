@@ -20,7 +20,7 @@ public class GeneratorAgent extends Agent {
 				container_object.run_env();
 				paths = container_object.get_env();
 				// Sync Messages
-				ACLMessage msg_1 = new ACLMessage(ACLMessage.INFORM);
+				ACLMessage msg_1 = new ACLMessage(ACLMessage.INFORM);              
 				ACLMessage msg_2 = new ACLMessage(ACLMessage.INFORM);
 				ACLMessage msg_3 = new ACLMessage(ACLMessage.INFORM);
 
@@ -43,7 +43,7 @@ public class GeneratorAgent extends Agent {
 				msg_3.addReceiver(new AID("third",AID.ISLOCALNAME));
 				msg_3.setContent(content_3);
 				send(msg_3);
-
+				done();
 				block();
 				
 
